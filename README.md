@@ -43,3 +43,19 @@
 18. Create string variable for correct time format.
 19. Set stopTimer to true if time <= 0.
 20. If !stopTimer - update timer value and timerText.text.
+
+## Circular Slider
+1. Create __Canvas__, change its background, set UI Scale Mode to Scale with screen size.
+2. Create __Slider__, delete _Handle Slide Area_, set Transition to None, uncheck Interactable.
+3. Rename slider background to OuterBorder.
+4. Create a new __Sprite__ (Circle).
+5. Add circle to OuterBorder source image.
+6. Set Slider Width and Height to 160.
+7. Stretch OuterBorder, set buttom and top to 0.
+8. Stretch Fill Area, set left, top, right and bottom to 5.
+9. Add circle to Fill source image.
+10. Stretch Fill, set left, top, right and bottom to 0.
+11. Change Fill color, set image type to Filled.
+12. Dublicate OuterBorder, rename it to InnerBorder, set left, top, right, bottom to 20.
+13. Dublicate InnerBorder, rename to CenterArea and put into InnerBorder.
+14. In CenterArea set left, top, right, bottom to 5, change its color to main background color.
