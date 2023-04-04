@@ -10,7 +10,7 @@
 7. Inside _Slider_ component add new script to events list and change method name.
 8. You can also make the slider prettier: change it Handle, Background and Fill area.
 
-## Progress bar
+## Progress bar (with buttons)
 1. Create a __Canvas__ (change a background color and add other elements you need).
 2. Add a __Button__ and a __Slider__ to the Canvas (uncheck _Interactable_ in Slider component or just delete _Handle Slide Area_).
 3. Create new script _Progressbar_.
