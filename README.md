@@ -21,3 +21,25 @@
 8. In Button register a new event from slider (drug slider into new event).
 9. In Progressbar script choose UpdateProgress() method.
 10. You can also create a second __Button__ (Remove) and create a new method (__RemoveProgress__). After that register a new event from slider.
+
+## Timer
+1. Create a __Canvas__ (change a background color and add other elements you need).
+2. Add __Slider__, change its color as you wish.
+3. Delete _Handle Slide Area_.
+4. Set slider to it max value.
+5. In Slider add _TimerText_ to show time left.
+6. Create an __empty GameObject__ (rename it to _TimerController_).
+7. Create a new C#-script (_Timer_).
+8. Add this script to TimerController.
+9. In the script add reference to Slider.
+10. Create public field for timer text.
+11. Create variable _float maxTime_ (max game time).
+12. Create private _bool stopTimer_ (we need to know when we stop the timer).
+13. In Start set stopTimer to false.
+14. In Start set timerSlider maxValue and value to maxTime;
+15. In Update create a new variable _float time_ and set its value to maxTime - Time.time.
+16. In Update calculate a number of minutes that left.
+17. In Update calculate a number of seconds that left.
+18. Create string variable for correct time format.
+19. Set stopTimer to true if time <= 0.
+20. If !stopTimer - update timer value and timerText.text.
