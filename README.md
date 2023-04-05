@@ -59,3 +59,21 @@
 12. Dublicate OuterBorder, rename it to InnerBorder, set left, top, right, bottom to 20.
 13. Dublicate InnerBorder, rename to CenterArea and put into InnerBorder.
 14. In CenterArea set left, top, right, bottom to 5, change its color to main background color.
+
+## Mission Slider
+1. Create a __Canvas__, change background color.
+2. Add a __Panel__ (rename to _ContainerPanel_), set Opacity to 0.
+3. Inside ContainerPanel create a new __Panel__ (rename to _MissionsPanel_), resize it, change color or add sprite.
+4. Inside MissonsPanel create __Button__ (rename it to _MissionButton1_), add Text (number 1).
+5. Duplicate this button 8 times.
+6. Duplicate MissionPanel, drop it to right.
+7. Add 2 __Button__ for slider (Slide to right and to left).
+8. Create a new script _MissionSlider_, attach it to Canvas (or othr parent object).
+9. In script create field (reference to ContainerPanel).
+10. Create reference to all MissionsPanel.
+11. Create reference to right and left buttons.
+12. Create field _int currentIndex_.
+13. Create field _float containerPositionX_, initialize in Start method.
+14. Set up a iTween asset from assets store.
+15. Call MoveTo method through the code.
+16. In Unity attach events to buttons.
